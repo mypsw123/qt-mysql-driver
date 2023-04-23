@@ -25,7 +25,7 @@ message("64-bit")
     INCLUDEPATH += ./mysql5.7x64/include
     DESTDIR = $$PWD/bin/x64/
     CONFIG(debug, debug|release){
-        LIBS += -L$$PWD/mysql5.7x64/lib/ -llibmysqld
+        LIBS += -L$$PWD/mysql5.7x64/lib/ -llibmysql
     } else {
         LIBS += -L$$PWD/mysql5.7x64/lib/ -llibmysql
     }
@@ -35,7 +35,7 @@ message("32-bit")
     INCLUDEPATH += ./mysql5.7x32/include
     DESTDIR = $$PWD/bin/x32/
     CONFIG(debug, debug|release){
-        LIBS += -L$$PWD/mysql5.7x32/lib/ -llibmysqld
+        LIBS += -L$$PWD/mysql5.7x32/lib/ -llibmysql
     } else {
         LIBS += -L$$PWD/mysql5.7x32/lib/ -llibmysql
     }
